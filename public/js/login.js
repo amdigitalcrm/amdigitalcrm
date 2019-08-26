@@ -15,6 +15,7 @@ $(window).load(function() {
                 var datos = new FormData(form);
                 this.$http.post(url, datos, { emulateJSON: true }).
                 then(function(response) {
+                    console.log(response);
                     if (response.body == 0) {
                         this.info = 0;
                         this.mensaje = 'No existe usuario ' + '<small>' + this.usuario.toUpperCase().bold() + '</small>';

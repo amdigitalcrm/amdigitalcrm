@@ -8,20 +8,22 @@ class Clientes extends Model {
     private $fecha;
     private $hora;
     private $empresa;
-    private $email;
+    private $correo_principal;
+    private $correo_secundario;
     private $telefono;
     private $id_ubigeo;
     private $mensaje;
     private $id_usuario_asignado;
     private $id_empresa;
 
-    function __construct($id, $origen, $fecha, $hora, $empresa, $email, $telefono, $id_ubigeo, $mensaje, $id_usuario_asignado, $id_empresa) {
+    function __construct($id, $origen, $fecha, $hora, $empresa, $correo_principal, $correo_secundario, $telefono, $id_ubigeo, $mensaje, $id_usuario_asignado, $id_empresa) {
         $this->id = $id;
         $this->origen = $origen;
         $this->fecha = $fecha;
         $this->hora = $hora;
         $this->empresa = $empresa;
-        $this->email = $email;
+        $this->correo_principal = $correo_principal;
+        $this->correo_secundario = $correo_secundario;
         $this->telefono = $telefono;
         $this->id_ubigeo = $id_ubigeo;
         $this->mensaje = $mensaje;
@@ -49,8 +51,12 @@ class Clientes extends Model {
         return $this->empresa;
     }
 
-    function getEmail() {
-        return $this->email;
+    function getCorreo_principal() {
+        return $this->correo_principal;
+    }
+
+    function getCorreo_secundario() {
+        return $this->correo_secundario;
     }
 
     function getTelefono() {
@@ -93,8 +99,12 @@ class Clientes extends Model {
         $this->empresa = $empresa;
     }
 
-    function setEmail($email) {
-        $this->email = $email;
+    function setCorreo_principal($correo_principal) {
+        $this->correo_principal = $correo_principal;
+    }
+
+    function setCorreo_secundario($correo_secundario) {
+        $this->correo_secundario = $correo_secundario;
     }
 
     function setTelefono($telefono) {

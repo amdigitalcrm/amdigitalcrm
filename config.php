@@ -20,6 +20,7 @@ define('CONTROLLERS', '/controllers/');
 define('VIEWS', '/views/');
 define('BS', 'bussineslogic');
 define('ALGORITMO', 'sha512');
+define('ALGORITMO_CORREO', 'haval256,5');
 define('HASHKEY', 'kassandra@2015');
 define('NOMBRE_SESSION', 'adifact');
 date_default_timezone_set('America/lima');

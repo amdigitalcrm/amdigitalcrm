@@ -14,7 +14,7 @@ $(window).load(function() {
         }, {
             "data": "empresa"
         }, {
-            "data": "email"
+            "data": "correos"
         }, {
             "data": "telefono"
         }, {

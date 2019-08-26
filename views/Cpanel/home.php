@@ -6,7 +6,7 @@ require URLINC.'check_session.php';
 <h1 class="titulo"> Webmail BETA </h1>
  
 <?php
-$imap = imap_open ("{mail.hardmachineaqp.com:993/imap/ssl}INBOX", "mrodriguez@hardmachineaqp.com", "kassandra@2015") or die("No Se Pudo Conectar Al Servidor:" . imap_last_error());
+$imap = imap_open ("{mail.gingercat.ml:993/imap/ssl}INBOX", "5b363a076d688d15174e89d199003be74ca87ff09d62393c878c3d0270bf7810@gingercat.ml", "kassandra@2015") or die("No Se Pudo Conectar Al Servidor:" . imap_last_error());
 $checar = imap_check($imap);
  
 // Detalles generales de todos los mensajes del usuario.

@@ -41,4 +41,3 @@ if (file_exists($path)) {
 }
 
 
-echo 'hola angel';

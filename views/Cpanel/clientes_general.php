@@ -18,7 +18,7 @@ require URLINC.'check_session.php';
 						<th>Origen</th>
 						<th>Fecha / Hora</th>
 						<th>Empresa</th>
-						<th>Correo</th>
+						<th>Correos</th>
 						<th>Teléfono</th>
 						<th>Ubigeo</th>
 						<th>Mensaje</th>
